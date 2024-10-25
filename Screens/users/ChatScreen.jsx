@@ -52,7 +52,6 @@ const [selectedMessageId, setSelectedMessageId] = useState(null);
     }
   };
 
-  // Send message
 // Send message
 const sendMessage = async () => {
     if (!input.trim()) return; // Avoid sending empty messages

@@ -56,7 +56,7 @@ function LoginPage({props}){
      <ScrollView  contentContainerStyle={{flexGrow:1}} keyboardShouldPersistTaps={"always"}>
            <View>
             <View style={styles.logoContainer} c>  
-                <Image style={styles.logo} source={require('../../assets/logo.png')}/>
+                <Image style={styles.logo} source={require('../../assets/logoo3.png')}/>
             </View>
             <View style={styles.loginContainer}>
             <Text style={styles.text_header}>Login</Text>
@@ -111,7 +111,7 @@ function LoginPage({props}){
             </View>
             </View>
             <View style={styles.button}>
-                <TouchableOpacity style={styles.inBut} onPress={()=>handleSubmit()}>
+                <TouchableOpacity style={styles.btn} onPress={()=>handleSubmit()}>
                 <View>
                     <Text style={styles.textSign}>Log in</Text>
                 </View>
@@ -124,7 +124,7 @@ function LoginPage({props}){
 
            
             <TouchableOpacity 
-              style={styles.inBut}
+              style={styles.btn}
               onPress={() => {
                 navigation.navigate('Register');
               }}>

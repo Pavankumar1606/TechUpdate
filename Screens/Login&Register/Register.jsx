@@ -96,9 +96,9 @@ function RegisterPage({props}){
         contentContainerStyle={{flexGrow: 1}}
         showsVerticalScrollIndicator={false}>
             <View>
-            <View style={styles.logoContainer}>  
+            {/* <View style={styles.logoContainer}>  
                 <Image style={styles.logo} source={require('../../assets/logo.png')}/>
-            </View>
+            </View> */}
             <View style={styles.loginContainer1}>
             <Text style={styles.text_header}>Register</Text>
 
@@ -145,7 +145,7 @@ function RegisterPage({props}){
             }
 
             <View style={styles.action}>
-            <FontAwesome name="lock" color="#16423C" style={styles.smallIcon} />
+            <Feather name="mail" color="#16423C" style={styles.smallIcon} />
             <TextInput placeholder="Email" 
             style={styles.textInput}
             onChange={e=>handleEmail(e)}
@@ -166,7 +166,7 @@ function RegisterPage({props}){
             </Text>
           )}
             <View style={styles.action}>
-            <FontAwesome name="lock" color="#16423C" style={styles.smallIcon} />
+            <FontAwesome name="phone" color="#16423C" style={styles.smallIcon} />
             <TextInput placeholder="Mobile" 
             style={styles.textInput} 
             onChange={(e)=>handleMobile(e)}
@@ -216,7 +216,7 @@ function RegisterPage({props}){
 
 
 
-            <View style={styles.radioButton_div}>
+            {/* <View style={styles.radioButton_div}>
             <Text style={styles.radioButton_title}> Register  as</Text>
             <View style={styles.radioButton_inner_div}>
               <Text style={styles.radioButton_text}>User</Text>
@@ -235,16 +235,26 @@ function RegisterPage({props}){
               onPress={()=>setUserType('Admin')}
               />            
             </View>
-          </View>
+          </View> */}
               
             </View>
             <View style={styles.button}>
-                <TouchableOpacity style={styles.inBut} onPress={()=>handleSubmit()}>
+                <TouchableOpacity style={styles.btn1} onPress={()=>handleSubmit()}>
                 <View>
                     <Text style={styles.textSign}>Register</Text>
                 </View>
                 </TouchableOpacity>
-
+              <Text >Already have an acoount</Text>
+                  <TouchableOpacity 
+                 
+                  onPress={() => {
+                    navigation.navigate('Login');
+                  }}>
+                <View>
+                      <Text style={{flexDirection:'row'}}>Sign in</Text>
+                  </View>
+                </TouchableOpacity>
+          
                 </View>
         </View>
         </ScrollView>

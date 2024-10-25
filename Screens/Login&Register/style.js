@@ -10,7 +10,7 @@ const styles=StyleSheet.create({
         color: 'white',
       },
       smallIcon: {
-        marginRight: 10,
+        marginRight: 20,
         fontSize: 24,
       },
       logoContainer: {
@@ -28,21 +28,29 @@ const styles=StyleSheet.create({
       },
       action: {
         flexDirection: 'row',
-        paddingTop: 10,
-        paddingBottom: 3,
-        marginTop: 15,
+        // paddingTop: 10,
+        // paddingBottom: 3,
+        // marginTop: 15,
     
-        paddingHorizontal: 15,
+        // paddingHorizontal: 15,
     
-        borderWidth: 1,
-        borderColor: '#16423C',
-        borderRadius: 50,
+        // borderWidth: 1,
+        // borderColor: '#16423C',
+        // borderRadius: 50,
+
+        width:320,
+        marginTop:15,
+        borderBlockColor:'#BEBEBE',
+        borderBottomWidth:1,
+        paddingBottom:10,
+        fontFamily:'GeezaPro-Bold',
+        fontSize:15,
       },
       textInput: {
         flex: 1,
         marginTop: -12,
     
-        color: '#05375a',
+        // color: '#05375a',
       },
       loginContainer: {
         backgroundColor: '#fff',
@@ -50,9 +58,12 @@ const styles=StyleSheet.create({
         borderTopRightRadius: 30,
         paddingHorizontal: 20,
         paddingVertical: 30,
+        
       },
       loginContainer1: {
-        
+        marginTop:'40%',
+        alignItems:'center',
+        justifyContent:'center',
         backgroundColor: '#fff',
         borderTopLeftRadius: 30,
         borderTopRightRadius: 30,
@@ -64,6 +75,7 @@ const styles=StyleSheet.create({
         paddingHorizontal: 20,
       },
       text_header: {
+        textAlign:'center',
         color: '#16423C',
         fontWeight: 'bold',
         fontSize: 30,
@@ -75,13 +87,23 @@ const styles=StyleSheet.create({
         textAlign: 'center',
         margin: 20,
       },
-      inBut: {
-        width: '70%',
+      btn: {
+        width: '50%',
         backgroundColor: '#16423C',
         alignItems: 'center',
         paddingHorizontal: 15,
         paddingVertical: 15,
         borderRadius: 50,
+      },
+      btn1:{
+        width: '50%',
+        marginTop:50,
+        backgroundColor: '#16423C',
+        padding:15,
+        marginLeft:'auto',
+        marginRight:'auto',
+        alignItems: 'center',
+        borderRadius: 6,
       },
       inBut2: {
         backgroundColor: '#16423C',

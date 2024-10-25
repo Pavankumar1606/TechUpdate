@@ -11,6 +11,7 @@ import ProfileScreen from "./Screens/users/ProfileScreen";
 import Feather from 'react-native-vector-icons/Feather'
 import FontAwesome from 'react-native-vector-icons/FontAwesome'
 import { View } from "react-native";
+import { useNavigation } from "@react-navigation/native"; 
 
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import TechNews from "./Screens/users/TechNews";
@@ -21,7 +22,8 @@ import { NotificationProvider } from "./Screens/NotificationContext";
 import ChatScreen from "./Screens/users/ChatScreen";
 import RequestManagementScreen from "./Screens/RequestManagement";
 import Bot from "./Screens/Bot";
-
+import AsyncStorage from "@react-native-async-storage/async-storage";
+import { useEffect } from "react"
 
 
 const Tab = createBottomTabNavigator();
@@ -81,8 +83,11 @@ function MyTabs() {
 
 
  function App(){
-
   const Stack=createNativeStackNavigator()
+
+  
+
+
 
 
   return(

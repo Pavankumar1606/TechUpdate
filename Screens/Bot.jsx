@@ -39,9 +39,8 @@ const Bot = () => {
       const data = await response.json();
   
      
-    //   console.log('API Response:', JSON.stringify(data, null, 2)); // Pretty print the response
-  
-     
+    //   console.log('API Response:', JSON.stringify(data, null, 2));
+    
       if (data && data.candidates && data.candidates.length > 0) {
         const botMessage = data.candidates[0].content.parts[0].text; // Extracting the text correctly
         setMessages((prevMessages) => [

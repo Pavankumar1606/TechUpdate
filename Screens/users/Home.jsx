@@ -341,8 +341,8 @@ const styles = StyleSheet.create({
   image:{
     height:200,
     width:'100%',
-    borderRadius:10,
-  },
+      borderRadius:10,
+    },
 });
 
 
